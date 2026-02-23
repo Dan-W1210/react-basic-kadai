@@ -1,48 +1,36 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.calculator-container {
+  background: whitesmoke;
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 8px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.display {
+  background: white;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.style {
-   border: '1px solid #ccc',
-   borderRadius 8px,
-   padding: 16px,
+button {
+  height: 50px;
+  font-size: 18px;
+  background: lightblue;
+  border: none;
+  border-radius: 4px;
 }
